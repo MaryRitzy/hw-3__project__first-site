@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Registration form</title>
+</head>
+
+<body>
+
+  <div class="bg-image-two"></div>
+  <div class="bg-overlay"></div>
+  <div class="bg-image"></div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-top">
+          <li class="nav-top-item"><a class="nav-top-item-link" href="../index.html">Головна</a></li>
+          <li class="nav-top-item"><a class="nav-top-item-link" href="articles.html">Статті</a></li>
+          <li class="nav-top-item"><a class="nav-top-item-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-top-item"><a class="nav-top-item-link" href="contacts.html">Контакти</a></li>
+          <li class="nav-top-item"><a class="nav-top-item-link" href="gallery.html">Галерея</a></li>
+          <li class="nav-top-item"><a class="nav-top-item-link" href="page-nav.html">Навігація</a></li>
+          <li class="nav-top-item"><a class="nav-top-item-link" href="registration.html">Реєстрація</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <h1 class="navigation-title">Реєстрація</h1>
+
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+        <fieldset>
+          <legend>Форма реєстрації</legend>
+
+          <div class="form-group">
+            <label for="surname">Прізвище</label>
+            <input id="surname" class="capitalized" name="surname" type="text" placeholder="Прізвище">
+          </div>
+
+          <div class="form-group">
+            <label for="name">Ім'я</label>
+            <input id="name" class="capitalized" name="name" type="text" placeholder="Ім'я">
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Телефон</label>
+            <input id="tel" name="tel" type="tel" placeholder="Ваш телефон">
+          </div>
+
+          <div class="form-group">
+            <label for="myfile">Фото:</label>
+            <input id="myfile" name="myfile" type="file">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="password" placeholder="Email">
+          </div>
+
+          <div class="form-group">
+            <label for="login">Логін</label>
+            <input id="login" name="login" type="text" placeholder="Логін" minlength="3" maxlength="10">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Пароль</label>
+            <input name="password" id="password" type="password" placeholder="Пароль" minlength="3" maxlength="10">
+          </div>
+
+          <div class="form-group">
+            <label for="age">Вік</label>
+            <input id="age" name="age" type="number" placeholder="Вкажіть скільки вам повних років" min="1" max="122">
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Стать</legend>
+
+          <div class="form-group-sm">
+            <input id="g_male" name="gender" type="radio" value="male">
+            <label for="g_male">Чол.</label>
+          </div>
+
+          <div class="form-group-sm">
+            <input id="g_female" name="gender" type="radio" value="female">
+            <label for="g_female">Жін.</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Дата народження</legend>
+
+          <div class="form-group">
+            <label for="year">Дата народження</label>
+            <input id="year" type="date">
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Улюблена кухня:</legend>
+
+          <div class="form-group-sm">
+            <input id="cuisine-ua" name="cuisine" type="checkbox" value="ua">
+            <label for="cuisine-ua">Українська</label>
+          </div>
+
+          <div class="form-group-sm">
+            <input id="cuisine-itl" name="cuisine" type="checkbox" value="itl">
+            <label for="cuisine-itl">Італійська</label>
+          </div>
+
+          <div class="form-group-sm">
+            <input id="cuisine-jp" name="cuisine" type="checkbox" value="jp">
+            <label for="cuisine-jp">Японська</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Коротко про себе</legend>
+
+          <div class="form-group">
+            <label for="txt">Про себе</label>
+            <textarea id="txt" name="txt" cols="30" rows="3" placeholder="Напишіть коротко про себе.."></textarea>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Зручний час для мандрівки</legend>
+
+          <div class="form-group">
+            <label for="month">Запланований місяць</label>
+            <input id="month" name="month" type="month">
+          </div>
+
+          <div class="form-group">
+            <label for="year-select">Запланований рік</label>
+            <select name="year-select" id="year-select">
+              <option value="">--Виберіть бажаний рік--</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+              <option value="2031">2031</option>
+            </select>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Дії</legend>
+
+          <div class="btn-set">
+            <button type="submit">Зареєструватися</button>
+            <button type="reset">Очистити форму</button>
+            <button type="button" onclick="confirm ('Вам потрібна консультація?')">Потрібна консультація</button>
+          </div>
+
+        </fieldset>
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="nav-sosials">
+        <a class="nav-sosials-link" href="https://facebook.com" target="_blank"><i
+            class="fa-brands fa-square-facebook"></i></a>
+        <a class="nav-sosials-link" href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a class="nav-sosials-link" href="https://linkedin.com" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a class="nav-sosials-link" href="https://instagram.com" target="_blank"><i
+            class="fa-brands fa-square-instagram"></i></a>
+        <a class="nav-sosials-link" href="https://telegram.org" target="_blank"><i
+            class="fa-brands fa-telegram"></i></a>
+        <a class="nav-sosials-link" href="https://github.com" target="_blank"><i
+            class="fa-brands fa-square-github"></i></a>
+      </div>
+
+      <div class="copy">&copy; Бажаємо здоров'я!</div>
+    </div>
+  </footer>
+</body>
+
+</html>
